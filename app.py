@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-app = Flask(name)
+app = Flask(android)
 
 def fetch_octoplus_news():
     url = "https://octoplusbox.com/news/"
@@ -38,4 +38,5 @@ def get_news():
     return jsonify(data)
 
 if name == "main":
+
     app.run(debug=True, host="0.0.0.0")
